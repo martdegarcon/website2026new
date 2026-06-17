@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Студия — сайты, которые приносят заявки</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="stage" id="stage" style="height: 10720px;">
+    <div class="section-bleed section-bleed--dark" id="darkSectionBleed"></div>
+    <div class="canvas" id="canvas" style="width: 1920px; height: 10720px; background: white; transform: scale(1);">
+
+      <!-- ===================== HERO ===================== -->
+      <div id="top" style="width: 1872px; height: 750px; left: 24px; top: 24px; position: absolute">
+        <div style="width: 1872px; height: 750px; left: 0px; top: 0px; position: absolute; border-radius: 24px; background-image: url(&#39;assets/hero/bg.png&#39;); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <!-- Studio logo (top-left) -->
+        <a href="#top" class="nav-logo" style="left: 76px; top: 40px; position: absolute; display: flex; align-items: center; height: 32px;"><img src="./assets/hero/logo.svg" alt="withsolution studio" style="width: 85px; height: 29px; display: block;"></a>
+        <a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" style="left: 753px; top: 636px; position: absolute; justify-content: flex-start; align-items: center; display: inline-flex">
+          <div style="height: 64px; padding-left: 16px; padding-right: 16px; padding-top: 10px; padding-bottom: 10px; background: white; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+            <div style="opacity: 0.90; justify-content: center; display: flex; flex-direction: column; color: rgba(30, 30, 30, 0.90); font-size: 18px; font-weight: 500; word-wrap: break-word">Получить бесплатную консультацию</div>
+          </div>
+          <div style="width: 64px; height: 64px; padding: 10px 16px; background: white; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+            <img src="./assets/icons/chat-dark.svg" alt="" style="width: 44px; height: 44px; display: block;">
+          </div>
+        </a>
+        <nav style="left: 683px; top: 32px; position: absolute; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+          <a href="#section-about" style="height: 48px; padding: 10px 16px; background: rgba(30, 30, 30, 0.20); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex"><span style="opacity: 0.90; color: white; font-size: 18px; font-weight: 500">О нас</span></a>
+          <a href="#section-services" style="height: 48px; padding: 10px 16px; background: rgba(30, 30, 30, 0.20); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex"><span style="opacity: 0.90; color: white; font-size: 18px; font-weight: 500">Сервис</span></a>
+          <a href="#section-cases" style="height: 48px; padding: 10px 16px; background: rgba(30, 30, 30, 0.20); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex"><span style="opacity: 0.90; color: white; font-size: 18px; font-weight: 500">Кейсы</span></a>
+          <a href="#section-reviews" style="height: 48px; padding: 10px 16px; background: rgba(30, 30, 30, 0.20); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex"><span style="opacity: 0.90; color: white; font-size: 18px; font-weight: 500">Отзывы</span></a>
+          <a href="#section-pricing" style="height: 48px; padding: 10px 16px; background: rgba(30, 30, 30, 0.20); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex"><span style="opacity: 0.90; color: white; font-size: 18px; font-weight: 500">Тарифы</span></a>
+          <a href="#section-faq" style="height: 48px; padding: 10px 16px; background: rgba(30, 30, 30, 0.20); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex"><span style="opacity: 0.90; color: white; font-size: 18px; font-weight: 500">FAQ</span></a>
+        </nav>
+        <a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" style="height: 48px; padding: 10px 16px; left: 1635px; top: 32px; position: absolute; background: white; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+          <span style="opacity: 0.90; color: rgba(30, 30, 30, 0.90); font-size: 18px; font-weight: 500">Связаться с нами</span>
+        </a>
+        <div class="hero-cases-slider" id="heroCasesSlider" style="left: 100px; top: 158px; position: absolute; width: 1720px; height: 400px;">
+          <div class="hero-cases-track" id="heroCasesTrack"></div>
+        </div>
+      </div>
+
+      <!-- ===================== INTRO ===================== -->
+      <div id="section-about" style="width: 843px; left: 100px; top: 824px; position: absolute; opacity: 0.90; color: rgba(30, 30, 30, 0.90); font-size: 48px; font-weight: 500">Проектируем сайты, которые превращают посетителей в деньги.</div>
+      <div style="left: 100px; top: 964px; position: absolute; width: 1720px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+        <div style="width: 739px; flex: none; opacity: 0.90; color: rgba(30, 30, 30, 0.90); font-size: 24px; font-weight: 400; line-height: 32px">Дизайн, продающие тексты и аналитика — под одну задачу: чтобы из вашего текущего трафика покупало больше людей. Если конверсия не вырастет — дорабатываем бесплатно.</div>
+        <div style="flex: none; justify-content: flex-start; align-items: center; gap: 32px; display: inline-flex">
+          <div style="opacity: 0.90; color: rgba(30, 30, 30, 0.90); font-size: 48px; font-weight: 500">4%</div>
+          <div style="width: 224px; opacity: 0.90; color: rgba(30, 30, 30, 0.90); font-size: 24px; font-weight: 400; line-height: 32px">Средний рост конверсии на сайте</div>
+        </div>
+      </div>
+
+      <!-- ===================== ABOUT CARDS ===================== -->
+      <div style="width: 886px; height: 500px; left: 100px; top: 1201px; position: absolute; border-radius: 24px; overflow: hidden">
+        <div style="width: 100%; height: 100%; position: absolute; inset: 0; border-radius: 24px; background-image: url(&#39;assets/hero/card.png&#39;); background-size: cover; background-position: center;"></div>
+        <div style="padding: 16px; left: 318px; top: 394px; position: absolute; background: white; border-radius: 12px; display: inline-flex">
+          <div style="justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+            <div style="opacity: 0.90; color: #1E1E1E; font-size: 48px; font-weight: 500">5+</div>
+            <div style="opacity: 0.90; color: #1E1E1E; font-size: 24px; font-weight: 400">Лет опыта в дизайне и разработке</div>
+          </div>
+        </div>
+        <div style="padding: 16px; left: 16px; top: 394px; position: absolute; background: white; border-radius: 12px; display: inline-flex">
+          <div style="justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+            <div style="opacity: 0.90; color: #1E1E1E; font-size: 48px; font-weight: 500">40+</div>
+            <div style="opacity: 0.90; color: #1E1E1E; font-size: 24px; font-weight: 400">Запущенных<br>проектов</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 401px; height: 500px; left: 1002px; top: 1201px; position: absolute; background: rgba(236.62, 236.62, 236.62, 0.50); border-radius: 24px">
+        <div style="width: 80px; height: 77px; left: 280px; top: 399px; position: absolute;"><img src="./assets/hero/star.svg" alt="" style="width: 100%; height: 100%; display: block;"></div>
+        <div style="width: 234px; height: 70px; left: 24px; top: 24px; position: absolute; border-radius: 8px; overflow: hidden;"><img src="./assets/hero/blur.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="width: 352px; left: 24px; top: 178px; position: absolute; opacity: 0.90; color: rgba(30, 30, 30, 0.70); font-size: 24px; font-weight: 500; text-transform: uppercase">Не делаем «красиво ради красоты». Каждый сайт собираем под рост конверсии и считаем результат в деньгах.</div>
+      </div>
+
+      <div style="width: 401px; height: 500px; left: 1419px; top: 1201px; position: absolute; background: #0B1714; border-radius: 24px">
+        <div style="width: 369px; padding: 10px; left: 16px; top: 435px; position: absolute; background: #1E1E1E; border-radius: 12px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+          <div style="opacity: 0.90; color: #ECECEC; font-size: 24px; font-weight: 400">Подключаем и настраиваем</div>
+        </div>
+        <div style="width: 369px; height: 411px; left: 16px; top: 16px; position: absolute; background: #F6F6F6; overflow: hidden; border-radius: 12px">
+          <video src="./assets/video/0611.mp4" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;"></video>
+        </div>
+      </div>
+
+      <!-- ===================== TRUST / LOGOS ===================== -->
+      <div style="width: 693px; left: 613px; top: 1871px; position: absolute; text-align: center; color: rgba(30, 30, 30, 0.90); font-size: 24px; font-weight: 400; line-height: 32px">Мы — студия, которая делает сайты под одну задачу: чтобы из того же трафика покупали больше людей. Не вырастет конверсия — дорабатываем бесплатно.</div>
+
+      <div style="left: 853px; top: 2017px; position: absolute; text-align: center; color: rgba(30, 30, 30, 0.90); font-size: 18px; font-weight: 400">Нам доверяют компании</div>
+
+      <div style="width: 200px; height: 100px; left: 444px; top: 2071px; position: absolute; background: rgba(236.62, 236.62, 236.62, 0.50); border-radius: 8px; overflow: hidden;">
+        <img src="./assets/logos/logo-rosatom.png" alt="Росатом" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+      </div>
+      <div style="width: 200px; height: 100px; left: 652px; top: 2071px; position: absolute; background: rgba(236.62, 236.62, 236.62, 0.50); border-radius: 8px; overflow: hidden;">
+        <img src="./assets/logos/logo-mifi.png" alt="НИЯУ МИФИ" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+      </div>
+      <div style="width: 200px; height: 100px; left: 860px; top: 2071px; position: absolute; background: rgba(236.62, 236.62, 236.62, 0.50); border-radius: 8px; overflow: hidden;">
+        <img src="./assets/logos/logo-dnk.png" alt="ДНК России" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+      </div>
+      <div style="width: 200px; height: 100px; left: 1068px; top: 2071px; position: absolute; background: rgba(236.62, 236.62, 236.62, 0.50); border-radius: 8px; overflow: hidden;">
+        <img src="./assets/logos/logo-rialtorg.png" alt="Риалторг" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+      </div>
+      <div style="width: 200px; height: 100px; left: 1276px; top: 2071px; position: absolute; background: rgba(236.62, 236.62, 236.62, 0.50); border-radius: 8px; overflow: hidden;">
+        <img src="./assets/logos/logo-omarketing.png" alt="Омаркетинг" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+      </div>
+
+      <!-- ===================== WHAT WE DO ===================== -->
+      <div id="section-services" style="left: 100px; top: 2359px; position: absolute; color: rgba(30, 30, 30, 0.90); font-size: 48px; font-weight: 500">Сайт как машина заявок,<br>а не как картинка</div>
+      <div style="width: 656px; left: 100px; top: 2507px; position: absolute; color: rgba(30, 30, 30, 0.90); font-size: 24px; font-weight: 400; line-height: 32px">Три формата под задачу и бюджет. В каждом — дизайн, продающие тексты и аналитика, собранные ради одной цифры: роста заявок.</div>
+      <div style="left: 100px; top: 2321px; position: absolute; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+        <img src="./assets/icons/star-small.png" alt="" style="width: 16px; height: 15px; display: block;">
+        <div style="color: rgba(30, 30, 30, 0.90); font-size: 18px; font-weight: 500">Что мы делаем</div>
+      </div>
+
+      <div style="width: 818px; height: 600px; left: 1002px; top: 2321px; position: absolute; border-radius: 24px; overflow: hidden; background-image: url('assets/sections/service-landing.jpg'); background-size: cover; background-position: center;"></div>
+      <div style="width: 794px; height: 116px; left: 1014px; top: 2793px; position: absolute; background: white; overflow: hidden; border-radius: 12px">
+        <div style="left: 26px; top: 16px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+          <div style="color: #1E1E1E; font-size: 24px; font-weight: 400; line-height: 32px">Продающий лендинг</div>
+          <div style="width: 510px; color: #1E1E1E; font-size: 18px; font-weight: 400">Одна страница под один продукт или услугу. Для запуска рекламы и быстрого теста спроса.</div>
+        </div>
+        <div style="width: 64px; height: 64px; padding: 10px 16px; left: 704px; top: 26px; position: absolute; background: rgba(30, 30, 30, 0.90); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+          <img src="./assets/icons/arrow.png" alt="" style="width: 40px; height: 40px; display: block;">
+        </div>
+      </div>
+
+      <div style="width: 818px; height: 600px; left: 1002px; top: 3021px; position: absolute; border-radius: 24px; overflow: hidden; background-image: url('assets/sections/service-shop.jpg'); background-size: cover; background-position: center;"></div>
+      <div style="width: 794px; height: 116px; left: 1014px; top: 3493px; position: absolute; background: white; overflow: hidden; border-radius: 12px">
+        <div style="left: 26px; top: 16px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+          <div style="align-self: stretch; color: #1E1E1E; font-size: 24px; font-weight: 400; line-height: 32px">Интернет-магазин</div>
+          <div style="width: 514px; color: #1E1E1E; font-size: 18px; font-weight: 400">Каталог, карточки, корзина, оплата. Когда шаблон не справляется, а результат всё равно нужен измеримый.</div>
+        </div>
+        <div style="width: 64px; height: 64px; padding: 10px 16px; left: 704px; top: 26px; position: absolute; background: rgba(30, 30, 30, 0.90); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+          <img src="./assets/icons/arrow.png" alt="" style="width: 40px; height: 40px; display: block;">
+        </div>
+      </div>
+
+      <div style="width: 818px; height: 600px; left: 1002px; top: 3721px; position: absolute; border-radius: 24px; overflow: hidden; background-image: url('assets/sections/service-custom.jpg'); background-size: cover; background-position: center;"></div>
+      <div style="width: 794px; height: 116px; left: 1014px; top: 4193px; position: absolute; background: white; overflow: hidden; border-radius: 12px">
+        <div style="left: 26px; top: 16px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+          <div style="color: #1E1E1E; font-size: 24px; font-weight: 400; line-height: 32px">Кастомная разработка</div>
+          <div style="width: 539px; color: #1E1E1E; font-size: 18px; font-weight: 400">Нестандартный проект, сервис или сайт под ваши процессы — с нуля. Сложная логика, интеграции, личные кабинеты.</div>
+        </div>
+        <div style="width: 64px; height: 64px; padding: 10px 16px; left: 704px; top: 26px; position: absolute; background: rgba(30, 30, 30, 0.90); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+          <img src="./assets/icons/arrow.png" alt="" style="width: 40px; height: 40px; display: block;">
+        </div>
+      </div>
+
+      <!-- ===================== DARK SECTION ===================== -->
+      <div id="section-who" style="width: 1920px; height: 2994px; left: 0; top: 4470px; position: absolute; background: #1E1E1E; pointer-events: none;"></div>
+
+      <div style="left: 880px; top: 4621px; position: absolute; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+        <img src="./assets/icons/star-small.png" alt="" style="width: 16px; height: 15px; display: block; filter: brightness(0) invert(1);">
+        <div style="color: #F9F9F9; font-size: 18px; font-weight: 500">Кому подходит</div>
+      </div>
+      <div style="width: 1000px; left: 460px; top: 4659px; position: absolute; text-align: center; color: #F9F9F9; font-size: 48px; font-weight: 500">Тем, кому сайт должен приносить деньги, а не просто «быть»</div>
+      <div style="width: 757px; left: 581px; top: 4807px; position: absolute; text-align: center; color: #F9F9F9; font-size: 24px; font-weight: 400; line-height: 32px">Если у вас уже есть трафик и вы хотите больше заявок из него — вам подойдёт один из трёх форматов.</div>
+
+      <div style="width: 401px; height: 486px; left: 342px; top: 4921px; position: absolute; background: #F6F6F6; border-radius: 24px">
+        <div style="width: 385px; height: 250px; left: 8px; top: 8px; position: absolute; border-radius: 16px; overflow: hidden; background-image: url('assets/sections/who-target.png'); background-size: cover; background-position: center;"></div>
+        <div style="left: 16px; top: 362px; position: absolute; text-align: center; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Свой продукт или услуга</div>
+        <div style="width: 349px; left: 16px; top: 402px; position: absolute; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400">Заявки идут, но конверсия низкая. Соберём сайт, который продаёт за вас.</div>
+        <div style="width: 64px; height: 64px; padding: 10px 16px; left: 16px; top: 282px; position: absolute; background: #E4E4E4; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+          <img src="./assets/icons/laptop.png" alt="" style="width: 48px; height: 48px; display: block;">
+        </div>
+      </div>
+
+      <div style="width: 401px; height: 486px; left: 759px; top: 4921px; position: absolute; background: #F6F6F6; border-radius: 24px">
+        <div style="width: 385px; height: 250px; left: 8px; top: 8px; position: absolute; border-radius: 16px; overflow: hidden; background-image: url('assets/sections/who-shop.png'); background-size: cover; background-position: center;"></div>
+        <div style="left: 16px; top: 362px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Интернет-магазин</div>
+        <div style="width: 349px; left: 16px; top: 402px; position: absolute; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400">Трафик есть, корзины бросают. Доведём покупателя до оплаты.</div>
+        <div style="width: 64px; height: 64px; padding: 10px 16px; left: 16px; top: 282px; position: absolute; background: #E4E4E4; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+          <img src="./assets/icons/bag.png" alt="" style="width: 48px; height: 48px; display: block;">
+        </div>
+      </div>
+
+      <div style="width: 401px; height: 486px; left: 1176px; top: 4921px; position: absolute; background: #F6F6F6; border-radius: 24px">
+        <div style="width: 385px; height: 250px; left: 8px; top: 8px; position: absolute; border-radius: 16px; overflow: hidden; background-image: url('assets/sections/who-house.png'); background-size: cover; background-position: center;"></div>
+        <div style="left: 16px; top: 362px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Нужно разработать с нуля</div>
+        <div style="width: 349px; left: 16px; top: 402px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 18px; font-weight: 400">Нужен сайт под рекламу и продажи, и нужен срочно. Сделаем под ключ.</div>
+        <div style="width: 64px; height: 64px; padding: 10px 16px; left: 16px; top: 282px; position: absolute; background: #E4E4E4; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+          <img src="./assets/icons/verified.png" alt="" style="width: 48px; height: 48px; display: block;">
+        </div>
+      </div>
+
+      <!-- ===================== CASES ===================== -->
+      <div id="section-cases" style="left: 100px; top: 5571px; position: absolute; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+        <img src="./assets/icons/star-small.png" alt="" style="width: 16px; height: 15px; display: block; filter: brightness(0) invert(1);">
+        <div style="color: white; font-size: 18px; font-weight: 500">Кейсы</div>
+      </div>
+      <div style="left: 100px; top: 5609px; position: absolute; color: white; font-size: 48px; font-weight: 500">Результаты, которые говорят цифрами</div>
+
+      <div style="width: 644px; left: 1176px; top: 5669px; position: absolute; opacity: 0.90; color: white; font-size: 24px; font-weight: 400">Нам доверяют 30+ клиентов</div>
+      <div style="width: 48px; height: 48px; left: 1176px; top: 5607px; position: absolute; background: #D9D9D9; border-radius: 9999px; border: 1px #E8E8E8 solid"></div>
+      <div style="width: 48px; height: 48px; left: 1208px; top: 5607px; position: absolute; background: #C4C4C4; border-radius: 9999px; border: 1px #E8E8E8 solid"></div>
+      <div style="width: 48px; height: 48px; left: 1240px; top: 5607px; position: absolute; background: #B0B0B0; border-radius: 9999px; border: 1px #E8E8E8 solid"></div>
+      <div style="width: 48px; height: 48px; left: 1272px; top: 5607px; position: absolute; background: #9E9E9E; border-radius: 9999px; border: 1px #E8E8E8 solid"></div>
+
+      <div style="width: 1060px; height: 700px; left: 100px; top: 5775px; position: absolute; border-radius: 24px; overflow: hidden">
+        <img src="./assets/cases/case-01.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
+        <div style="padding: 8px; left: 12px; top: 650px; position: absolute; background: white; border-radius: 12px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+          <div style="color: #1E1E1E; font-size: 18px; font-weight: 400">Сайт для университета</div>
+          <img src="./assets/icons/arrow.png" alt="" style="width: 20px; height: 20px; display: block;">
+        </div>
+      </div>
+
+      <div style="width: 644px; height: 700px; left: 1176px; top: 5775px; position: absolute; border-radius: 24px; overflow: hidden">
+        <img src="./assets/cases/case-02.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
+        <div style="padding: 8px; left: 12px; top: 650px; position: absolute; background: white; border-radius: 12px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+          <div style="color: #1E1E1E; font-size: 18px; font-weight: 400">Сайт для RialTorg</div>
+          <img src="./assets/icons/arrow.png" alt="" style="width: 20px; height: 20px; display: block;">
+        </div>
+      </div>
+
+      <div style="width: 644px; height: 700px; left: 100px; top: 6491px; position: absolute; border-radius: 24px; overflow: hidden">
+        <img src="./assets/cases/case-03.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
+        <div style="padding: 8px; left: 12px; top: 650px; position: absolute; background: white; border-radius: 12px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+          <div style="color: #1E1E1E; font-size: 18px; font-weight: 400">Продающий лендинг для банного комплекса</div>
+          <img src="./assets/icons/arrow.png" alt="" style="width: 20px; height: 20px; display: block;">
+        </div>
+      </div>
+
+      <div style="width: 1060px; height: 700px; left: 760px; top: 6491px; position: absolute; border-radius: 24px; overflow: hidden">
+        <img src="./assets/cases/case-04.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
+        <div style="padding: 8px; left: 12px; top: 650px; position: absolute; background: white; border-radius: 12px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+          <div style="color: #1E1E1E; font-size: 18px; font-weight: 400">Интернет-магазин streetwear</div>
+          <img src="./assets/icons/arrow.png" alt="" style="width: 20px; height: 20px; display: block;">
+        </div>
+      </div>
+
+      <a href="cases.html" style="left: 813px; top: 7241px; position: absolute; justify-content: flex-start; align-items: center; display: inline-flex">
+        <div style="height: 64px; padding: 10px 16px; background: white; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+          <div style="opacity: 0.90; color: rgba(30, 30, 30, 0.90); font-size: 18px; font-weight: 500">Посмотреть все кейсы</div>
+        </div>
+        <div style="width: 64px; height: 64px; padding: 10px 16px; background: white; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+          <img src="./assets/icons/download.png" alt="" style="width: 44px; height: 44px; display: block;">
+        </div>
+      </a>
+
+      <!-- ===================== REVIEWS ===================== -->
+      <div id="section-reviews" style="left: 911px; top: 7614px; position: absolute; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+        <img src="./assets/icons/star-small.png" alt="" style="width: 16px; height: 15px; display: block;">
+        <div style="color: rgba(30, 30, 30, 0.90); font-size: 18px; font-weight: 500">Отзывы</div>
+      </div>
+      <div style="left: 50%; top: 7652px; position: absolute; transform: translateX(-50%); white-space: nowrap; text-align: center; color: rgba(30, 30, 30, 0.90); font-size: 48px; font-weight: 500">Реальные люди и реальные результаты</div>
+      <div style="width: 757px; left: 581px; top: 7742px; position: absolute; text-align: center; color: #1E1E1E; font-size: 24px; font-weight: 400; line-height: 32px">Три формата под разные задачи и бюджеты. В каждом — дизайн, продающие тексты, аналитика и гарантия роста конверсии.</div>
+
+      <div style="width: 401px; height: 320px; left: 343px; top: 7856px; position: absolute; background: #F6F6F6; border-radius: 24px; display: flex; flex-direction: column;">
+        <div style="left: 24px; top: 24px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Виктория — маркетолог</div>
+        <div style="width: 349px; left: 24px; top: 72px; position: absolute; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400; line-height: 26px">Больше всего кайфанула от того, что ребята не просто делали «как мы просим», а реально думали о результате. Марат несколько раз тактично, но уверенно отговаривал нас от спорных затей, объясняя, почему это навредит...</div>
+        <a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" style="position: absolute; left: 24px; bottom: 24px; color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500; text-decoration: underline; text-underline-offset: 4px;">Читать отзыв</a>
+      </div>
+      <div style="width: 401px; height: 320px; left: 760px; top: 7856px; position: absolute; background: #F6F6F6; border-radius: 24px; display: flex; flex-direction: column;">
+        <div style="left: 24px; top: 24px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Евгения — логистика</div>
+        <div style="width: 349px; left: 24px; top: 72px; position: absolute; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400; line-height: 26px">Мы полностью довольны результатом сотрудничества. Особенно хочется отметить его быструю реакцию на любые запросы и комментарии с нашей стороны. Марат всегда предлагал обоснованные решения...</div>
+        <a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" style="position: absolute; left: 24px; bottom: 24px; color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500; text-decoration: underline; text-underline-offset: 4px;">Читать отзыв</a>
+      </div>
+      <div style="width: 401px; height: 320px; left: 1177px; top: 7856px; position: absolute; background: #F6F6F6; border-radius: 24px; display: flex; flex-direction: column;">
+        <div style="left: 24px; top: 24px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Raven — интернет-магазин</div>
+        <div style="width: 349px; left: 24px; top: 72px; position: absolute; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400; line-height: 26px">Работа выполнена на действительно высоком уровне. Особенно стоит отметить реализованную админ-панель — она получилась максимально интуитивной и удобной в использовании. Всё понятно без лишних объяснений...</div>
+        <a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" style="position: absolute; left: 24px; bottom: 24px; color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500; text-decoration: underline; text-underline-offset: 4px;">Читать отзыв</a>
+      </div>
+
+      <!-- ===================== WHY TRUST US ===================== -->
+      <div id="section-faq" style="left: 100px; top: 8306px; position: absolute; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+        <img src="./assets/icons/star-small.png" alt="" style="width: 16px; height: 15px; display: block; opacity: 0.85;">
+        <div style="color: #434343; font-size: 18px; font-weight: 500">Почему нам можно доверять</div>
+      </div>
+      <div style="left: 100px; top: 8344px; position: absolute; color: #1E1E1E; font-size: 48px; font-weight: 500">Отвечаем за результат</div>
+
+      <div style="width: 418px; height: 292px; left: 100px; top: 8452px; position: absolute; background: #F6F6F6; border-radius: 24px">
+        <div style="width: 349px; left: 24px; top: 140px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Работаем от цифры</div>
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400">До старта фиксируем текущую конверсию — и метрику, которую растим. Сдаём не «дизайн», а измеримый результат.</div>
+        </div>
+        <img src="./assets/icons/stars-1.svg" alt="" style="width: 16px; height: 15px; left: 24px; top: 24px; position: absolute; display: block;">
+      </div>
+      <div style="width: 418px; height: 292px; left: 534px; top: 8452px; position: absolute; background: #F6F6F6; border-radius: 24px">
+        <div style="width: 349px; left: 24px; top: 140px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Тексты, дизайн и аналитика</div>
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400">Вы не пишете ТЗ и не сочиняете тексты: это наша работа.</div>
+        </div>
+        <img src="./assets/icons/stars-2.svg" alt="" style="height: 15px; left: 24px; top: 24px; position: absolute; display: block;">
+      </div>
+
+      <div style="width: 852px; height: 600px; left: 968px; top: 8452px; position: absolute; border-radius: 24px; overflow: hidden; background-image: url('assets/sections/trust-star-photo.png'); background-size: cover; background-position: center;"></div>
+
+      <div style="width: 418px; height: 292px; left: 100px; top: 8760px; position: absolute; background: #F6F6F6; border-radius: 24px">
+        <div style="width: 349px; left: 24px; top: 140px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">40+ проектов и 5+ лет опыта</div>
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400">Знаем, что повышает конверсию в вашей нише, а что — пустая трата бюджета.</div>
+        </div>
+        <img src="./assets/icons/stars-3.svg" alt="" style="height: 15px; left: 24px; top: 24px; position: absolute; display: block;">
+      </div>
+      <div style="width: 418px; height: 292px; left: 534px; top: 8760px; position: absolute; background: #F6F6F6; border-radius: 24px">
+        <div style="width: 349px; left: 24px; top: 140px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Прозрачно</div>
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400">Видите, на каком этапе проект и за что платите, на каждом шаге.</div>
+        </div>
+        <img src="./assets/icons/stars-4.svg" alt="" style="height: 15px; left: 24px; top: 24px; position: absolute; display: block;">
+      </div>
+
+      <!-- ===================== PRICING ===================== -->
+      <div id="section-pricing" style="left: 911.50px; top: 9202px; position: absolute; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+        <img src="./assets/icons/star-small.png" alt="" style="width: 16px; height: 15px; display: block;">
+        <div style="color: rgba(30, 30, 30, 0.90); font-size: 18px; font-weight: 500">Тарифы</div>
+      </div>
+      <div style="left: 50%; top: 9240px; position: absolute; transform: translateX(-50%); white-space: nowrap; text-align: center; color: rgba(30, 30, 30, 0.90); font-size: 48px; font-weight: 500">Прозрачные форматы под задачу и бюджет</div>
+      <div style="width: 757px; left: 581px; top: 9330px; position: absolute; text-align: center; color: rgba(30, 30, 30, 0.90); font-size: 24px; font-weight: 400; line-height: 32px">Фиксированная цена, без скрытых доплат. Два формата работы — выберите, как удобнее вам. В каждый входит: дизайн, тексты, адаптив, аналитика, гарантия роста конверсии.</div>
+
+      <div style="width: 852px; height: 406px; left: 100px; top: 9476px; position: absolute; background: #F6F6F6; overflow: hidden; border-radius: 24px">
+        <div style="left: 24px; top: 24px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">ТАРИФ «Стандарт»</div>
+        <div style="width: 509px; left: 24px; top: 64px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 18px; font-weight: 400">Оплачиваете проект целиком, и сайт сразу ваш. Знаете итоговую сумму и срок заранее. Подходит, если хотите сразу владеть сайтом и не платить каждый месяц.</div>
+        <div style="width: 509px; left: 24px; top: 170px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Лендинг — от 50 000 ₽</div>
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Интернет-магазин — от 80 000 ₽</div>
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Индивидуальная разработка — от 100 000 ₽</div>
+        </div>
+        <img src="./assets/sections/tariff-cloud.svg" alt="" style="width: 302px; height: 302px; left: 550px; top: 107px; position: absolute; display: block; object-fit: contain;">
+      </div>
+
+      <div style="width: 852px; height: 406px; left: 968px; top: 9476px; position: absolute; background: #F6F6F6; overflow: hidden; border-radius: 24px">
+        <div style="width: 349px; left: 24px; top: 24px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">ТАРИФ «Подписка»</div>
+        <div style="width: 549px; left: 24px; top: 64px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 18px; font-weight: 400">Делаем сайт без крупной суммы сразу, дальше ведём и поддерживаем за фиксированный ежемесячный платёж. Подходит, чтобы сайтом кто-то занимался постоянно.</div>
+        <div style="width: 509px; left: 24px; top: 170px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Лендинг — от 20 000 ₽/мес</div>
+          <div style="align-self: stretch; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Интернет-магазин — от 30 000 ₽/мес</div>
+          <div style="color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Индивидуальная разработка — от 35 000 ₽/мес</div>
+        </div>
+        <img src="./assets/sections/tariff-label.svg" alt="" style="width: 302px; height: 302px; left: 550px; top: 107px; position: absolute; display: block; object-fit: contain;">
+      </div>
+
+      <!-- ===================== CTA ===================== -->
+      <div id="section-cta" style="left: 866px; top: 10032px; position: absolute; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+        <img src="./assets/icons/star-small.png" alt="" style="width: 16px; height: 15px; display: block;">
+        <div style="color: rgba(30, 30, 30, 0.90); font-size: 18px; font-weight: 500">Пора действовать</div>
+      </div>
+      <div style="width: 850px; left: 535px; top: 10070px; position: absolute; text-align: center; color: #0B1714; font-size: 48px; font-weight: 500">Узнайте, сколько заявок вы теряете прямо сейчас</div>
+      <div style="width: 886px; left: 517px; top: 10218px; position: absolute; text-align: center; color: #0B1714; font-size: 24px; font-weight: 400; line-height: 32px">Напишите нам — за 20 минут разберём ваш текущий сайт, покажем 3-5 точек, где утекают деньги, и посчитаем потенциальный рост заявок. Бесплатно и без обязательств. Решение — за вами.</div>
+
+      <a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" style="left: 753px; top: 10364px; position: absolute; justify-content: flex-start; align-items: center; display: inline-flex">
+        <div style="height: 64px; padding: 10px 16px; background: rgba(30, 30, 30, 0.90); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+          <div style="opacity: 0.90; color: white; font-size: 18px; font-weight: 500">Получить бесплатную консультацию</div>
+        </div>
+        <div style="width: 64px; height: 64px; padding: 10px 16px; background: rgba(30, 30, 30, 0.90); border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+          <img src="./assets/icons/chat-white.svg" alt="" style="width: 44px; height: 44px; display: block;">
+        </div>
+      </a>
+
+      <!-- ===================== FOOTER ===================== -->
+      <footer style="width: 1720px; left: 100px; top: 10500px; position: absolute; padding: 48px 0 32px; border-top: 1px solid #E8E8E8; display: flex; justify-content: space-between; align-items: flex-start; gap: 48px;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <a href="#top"><img src="./assets/hero/logo.svg" alt="withsolution studio" style="width: 85px; height: 29px; display: block;"></a>
+          <div style="color: rgba(30, 30, 30, 0.60); font-size: 16px; font-weight: 400;">© 2026 withsolution studio</div>
+        </div>
+        <nav style="display: flex; flex-direction: column; gap: 12px;">
+          <a href="#section-about" style="color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500;">О нас</a>
+          <a href="#section-services" style="color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500;">Сервис</a>
+          <a href="#section-cases" style="color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500;">Кейсы</a>
+          <a href="#section-reviews" style="color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500;">Отзывы</a>
+          <a href="#section-pricing" style="color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500;">Тарифы</a>
+          <a href="#section-faq" style="color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500;">FAQ</a>
+        </nav>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="color: rgba(30, 30, 30, 0.60); font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em;">Соцсети</div>
+          <a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" style="color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500; text-decoration: underline; text-underline-offset: 4px;">Telegram</a>
+        </div>
+        <a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" style="height: 48px; padding: 10px 20px; background: rgba(30, 30, 30, 0.90); border-radius: 16px; display: inline-flex; align-items: center; color: white; font-size: 16px; font-weight: 500;">Связаться с нами</a>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- ==================== MOBILE / TABLET VIEW (≤ 1024px) ==================== -->
+  <div class="mobile-view mv">
+
+    <header class="mv-header" id="top">
+      <div class="mv-wrap row">
+        <a href="#top" class="mv-brand" style="display: flex; align-items: center; height: 32px;"><img src="./assets/hero/logo.svg" alt="withsolution studio" style="width: 75px; height: 26px; display: block; filter: invert(15%);"></a>
+        <button class="mv-menu-btn" id="mvMenuBtn" aria-label="Меню"><span></span></button>
+      </div>
+      <div class="mv-wrap mv-menu" id="mvMenu">
+        <a href="#mv-about">О нас</a>
+        <a href="#mv-do">Сервис</a>
+        <a href="#mv-cases">Кейсы</a>
+        <a href="#mv-reviews">Отзывы</a>
+        <a href="#mv-pricing">Тарифы</a>
+        <a href="#mv-faq">FAQ</a>
+        <a class="contact" href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer">Связаться с нами</a>
+      </div>
+    </header>
+
+    <section class="mv-hero">
+      <div class="mv-wrap">
+        <div class="mv-hero-card" style="background-image: url('assets/hero/bg.png'); background-size: cover; background-position: center;">
+          <div class="mv-hero-cards">
+            <div class="mv-hero-slider-track" id="mvHeroCasesTrack"></div>
+          </div>
+          <div class="mv-hero-cta"><a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" class="mv-hero-cta-link"><span class="pill">Получить консультацию</span><span class="ico"><img src="./assets/icons/chat-dark.svg" alt="" style="width: 32px; height: 32px; display: block;"></span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mv-section mv-intro">
+      <div class="mv-wrap">
+        <h1>Проектируем сайты, которые превращают посетителей в деньги.</h1>
+        <div class="mv-intro-row">
+          <p class="lead mv-intro-lead">Дизайн, продающие тексты и аналитика — под одну задачу: чтобы из вашего текущего трафика покупало больше людей. Если конверсия не вырастет — дорабатываем бесплатно.</p>
+          <div class="mv-stat"><div class="num">4%</div><div class="cap">Средний рост конверсии на сайте</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mv-section" id="mv-about">
+      <div class="mv-wrap">
+        <div class="mv-about-grid">
+          <div class="mv-about-photo" style="background-image: url('assets/hero/card.png'); background-size: cover; background-position: center;">
+            <div class="mv-badge-row">
+              <div class="mv-badge"><span class="n">40+</span><span class="c">Запущенных проектов</span></div>
+              <div class="mv-badge"><span class="n">5+</span><span class="c">Лет опыта</span></div>
+            </div>
+          </div>
+          <div class="mv-note">
+            <div class="lg" style="background-image: url(&#39;assets/hero/blur.png&#39;); background-size: cover; background-position: center; background-color: transparent; opacity: 1;"></div>
+            <p>Не делаем «красиво ради красоты». Каждый сайт собираем под рост конверсии и считаем результат в деньгах.</p>
+          </div>
+          <div class="mv-connect">
+            <div class="pane"><video src="./assets/video/0611.mp4" autoplay muted loop playsinline></video></div>
+            <div class="lab">Подключаем и настраиваем</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mv-section mv-trust">
+      <div class="mv-wrap">
+        <p class="lead">Мы — студия, которая делает сайты под одну задачу: чтобы из того же трафика покупали больше людей. Не вырастет конверсия — дорабатываем бесплатно.</p>
+        <div class="smalllabel">Нам доверяют компании</div>
+        <div class="mv-logos">
+          <div class="l"><img src="./assets/logos/logo-rosatom.png" alt="Росатом" style="width: 70%; height: 70%; object-fit: contain; display: block;"></div>
+          <div class="l"><img src="./assets/logos/logo-mifi.png" alt="НИЯУ МИФИ" style="width: 70%; height: 70%; object-fit: contain; display: block;"></div>
+          <div class="l"><img src="./assets/logos/logo-dnk.png" alt="ДНК России" style="width: 70%; height: 70%; object-fit: contain; display: block;"></div>
+          <div class="l"><img src="./assets/logos/logo-rialtorg.png" alt="Риалторг" style="width: 70%; height: 70%; object-fit: contain; display: block;"></div>
+          <div class="l"><img src="./assets/logos/logo-omarketing.png" alt="Омаркетинг" style="width: 70%; height: 70%; object-fit: contain; display: block;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mv-section" id="mv-do">
+      <div class="mv-wrap">
+        <span class="eyebrow"><i></i>Что мы делаем</span>
+        <h2>Сайт как машина заявок, а не как картинка</h2>
+        <p class="lead" style="margin-top:14px;">Три формата под задачу и бюджет. В каждом — дизайн, продающие тексты и аналитика, собранные ради одной цифры: роста заявок.</p>
+        <div class="mv-services">
+          <div class="mv-service">
+            <div class="shot"></div>
+            <div class="info"><div class="txt"><h3>Продающий лендинг</h3><p>Одна страница под один продукт или услугу. Для запуска рекламы и быстрого теста спроса.</p></div><div class="ic blue"><div class="g"></div></div></div>
+          </div>
+          <div class="mv-service">
+            <div class="shot"></div>
+            <div class="info"><div class="txt"><h3>Интернет-магазин</h3><p>Каталог, карточки, корзина, оплата. Когда шаблон не справляется, а результат всё равно нужен измеримый.</p></div><div class="ic"><div class="g"></div></div></div>
+          </div>
+          <div class="mv-service">
+            <div class="shot"></div>
+            <div class="info"><div class="txt"><h3>Кастомная разработка</h3><p>Нестандартный проект, сервис или сайт под ваши процессы — с нуля. Сложная логика, интеграции, личные кабинеты.</p></div><div class="ic"><div class="g"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mv-section mv-dark">
+      <div class="mv-wrap">
+        <div class="head">
+          <span class="eyebrow"><i></i>Кому подходит</span>
+          <h2>Тем, кому сайт должен приносить деньги, а не просто «быть»</h2>
+          <p class="lead">Если у вас уже есть трафик и вы хотите больше заявок из него — вам подойдёт один из трёх форматов.</p>
+        </div>
+        <div class="mv-who-cards">
+          <div class="mv-who-card"><div class="pic"></div><div class="ic"><div class="g"></div></div><h3>Свой продукт или услуга</h3><p>Заявки идут, но конверсия низкая. Соберём сайт, который продаёт за вас.</p></div>
+          <div class="mv-who-card"><div class="pic"></div><div class="ic"><div class="g"></div></div><h3>Интернет-магазин</h3><p>Трафик есть, корзины бросают. Доведём покупателя до оплаты.</p></div>
+          <div class="mv-who-card"><div class="pic"></div><div class="ic"><div class="g"></div></div><h3>Нужно разработать с нуля</h3><p>Нужен сайт под рекламу и продажи, и нужен срочно. Сделаем под ключ.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mv-section mv-cases" id="mv-cases">
+      <div class="mv-wrap">
+        <div class="head">
+          <div>
+            <span class="eyebrow" style="color:#fff;"><i></i>Кейсы</span>
+            <h2>Результаты, которые говорят цифрами</h2>
+          </div>
+          <div class="rate">
+            <div class="avatars"><span style="background:#D9D9D9;"></span><span style="background:#C4C4C4;"></span><span style="background:#B0B0B0;"></span><span style="background:#9E9E9E;"></span></div>
+            <p>Нам доверяют 30+ клиентов</p>
+          </div>
+        </div>
+        <div class="mv-cases-list">
+          <div class="mv-case"><div class="tag">Сайт для университета ↗</div></div>
+          <div class="mv-case"><div class="tag">Сайт для RialTorg ↗</div></div>
+          <div class="mv-case"><div class="tag">Продающий лендинг для банного комплекса ↗</div></div>
+          <div class="mv-case"><div class="tag">Интернет-магазин streetwear ↗</div></div>
+        </div>
+        <a href="cases.html" class="mv-cases-btn"><span class="pill">Посмотреть все кейсы</span><span class="ico">↗</span></a>
+      </div>
+    </section>
+
+    <section class="mv-section mv-reviews" id="mv-reviews">
+      <div class="mv-wrap">
+        <div class="head">
+          <span class="eyebrow"><i></i>Отзывы</span>
+          <h2>Реальные люди и реальные результаты</h2>
+          <p class="lead">Три формата под разные задачи и бюджеты. В каждом — дизайн, продающие тексты, аналитика и гарантия роста конверсии.</p>
+        </div>
+        <div class="mv-reviews-list">
+          <div class="mv-review"><h3>Виктория — маркетолог</h3><p>Больше всего кайфанула от того, что ребята не просто делали «как мы просим», а реально думали о результате. Марат несколько раз тактично, но уверенно отговаривал нас от спорных затей, объясняя, почему это навредит...</p><a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" class="mv-review-link">Читать отзыв</a></div>
+          <div class="mv-review"><h3>Евгения — логистика</h3><p>Мы полностью довольны результатом сотрудничества. Особенно хочется отметить его быструю реакцию на любые запросы и комментарии с нашей стороны. Марат всегда предлагал обоснованные решения...</p><a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" class="mv-review-link">Читать отзыв</a></div>
+          <div class="mv-review"><h3>Raven — интернет-магазин</h3><p>Работа выполнена на действительно высоком уровне. Особенно стоит отметить реализованную админ-панель — она получилась максимально интуитивной и удобной в использовании. Всё понятно без лишних объяснений...</p><a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" class="mv-review-link">Читать отзыв</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mv-section mv-why" id="mv-faq">
+      <div class="mv-wrap">
+        <div class="head">
+          <span class="eyebrow" style="color:#434343;"><i></i>Почему нам можно доверять</span>
+          <h2 style="color:#1E1E1E;">Отвечаем за результат</h2>
+        </div>
+        <div class="mv-why-grid">
+          <div class="mv-why-card"><div class="dots"><img src="./assets/icons/stars-1.svg" alt=""></div><div class="t"><h3>Работаем от цифры</h3><p>До старта фиксируем текущую конверсию — и метрику, которую растим. Сдаём не «дизайн», а измеримый результат.</p></div></div>
+          <div class="mv-why-card"><div class="dots"><img src="./assets/icons/stars-2.svg" alt=""></div><div class="t"><h3>Тексты, дизайн и аналитика</h3><p>Вы не пишете ТЗ и не сочиняете тексты: это наша работа.</p></div></div>
+          <div class="mv-why-card"><div class="dots"><img src="./assets/icons/stars-3.svg" alt=""></div><div class="t"><h3>40+ проектов и 5+ лет опыта</h3><p>Знаем, что повышает конверсию в вашей нише, а что — пустая трата бюджета.</p></div></div>
+          <div class="mv-why-card"><div class="dots"><img src="./assets/icons/stars-4.svg" alt=""></div><div class="t"><h3>Прозрачно</h3><p>Видите, на каком этапе проект и за что платите, на каждом шаге.</p></div></div>
+        </div>
+        <div class="mv-why-image"></div>
+      </div>
+    </section>
+
+    <section class="mv-section mv-pricing" id="mv-pricing">
+      <div class="mv-wrap">
+        <div class="head">
+          <span class="eyebrow"><i></i>Тарифы</span>
+          <h2>Прозрачные форматы под задачу и бюджет</h2>
+          <p class="lead">Фиксированная цена, без скрытых доплат. Два формата работы — выберите, как удобнее вам. В каждый входит: дизайн, тексты, адаптив, аналитика, гарантия роста конверсии.</p>
+        </div>
+        <div class="mv-prices">
+          <div class="mv-price">
+            <h3>ТАРИФ «Стандарт»</h3>
+            <p class="desc">Оплачиваете проект целиком, и сайт сразу ваш. Знаете итоговую сумму и срок заранее. Подходит, если хотите сразу владеть сайтом и не платить каждый месяц.</p>
+            <ul><li>Лендинг — от 50 000 ₽</li><li>Интернет-магазин — от 80 000 ₽</li><li>Индивидуальная разработка — от 100 000 ₽</li></ul>
+          </div>
+          <div class="mv-price">
+            <h3>ТАРИФ «Подписка»</h3>
+            <p class="desc">Делаем сайт без крупной суммы сразу, дальше ведём и поддерживаем за фиксированный ежемесячный платёж. Подходит, чтобы сайтом кто-то занимался постоянно.</p>
+            <ul><li>Лендинг — от 20 000 ₽/мес</li><li>Интернет-магазин — от 30 000 ₽/мес</li><li>Индивидуальная разработка — от 35 000 ₽/мес</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mv-section mv-cta" id="mv-cta">
+      <div class="mv-wrap">
+        <span class="eyebrow"><i></i>Пора действовать</span>
+        <h2>Узнайте, сколько заявок вы теряете прямо сейчас</h2>
+        <p class="lead">Напишите нам — за 20 минут разберём ваш текущий сайт, покажем 3-5 точек, где утекают деньги, и посчитаем потенциальный рост заявок. Бесплатно и без обязательств.</p>
+        <a class="mv-cta-btn" href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer"><span class="pill">Получить консультацию</span><span class="ico"><img src="./assets/icons/chat-white.svg" alt="" style="width: 32px; height: 32px; display: block;"></span></a>
+      </div>
+    </section>
+
+    <footer class="mv-footer">
+      <div class="mv-wrap">
+        <div class="mv-footer-top">
+          <a href="#top" class="mv-footer-logo"><img src="./assets/hero/logo.svg" alt="withsolution studio"></a>
+          <nav class="mv-footer-nav">
+            <a href="#mv-about">О нас</a>
+            <a href="#mv-do">Сервис</a>
+            <a href="cases.html">Кейсы</a>
+            <a href="#mv-reviews">Отзывы</a>
+            <a href="#mv-pricing">Тарифы</a>
+            <a href="#mv-faq">FAQ</a>
+          </nav>
+          <div class="mv-footer-social">
+            <span class="label">Соцсети</span>
+            <a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer">Telegram</a>
+          </div>
+        </div>
+        <div class="mv-footer-bottom">© 2026 withsolution</div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

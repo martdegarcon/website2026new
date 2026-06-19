@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Студия — сайты, которые приносят заявки</title>
 
+  <link rel="icon" type="image/png" href="./assets/icons/stars-1.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -108,11 +110,13 @@
       </div>
 
       <!-- ===================== WHAT WE DO ===================== -->
-      <div id="section-services" style="left: 100px; top: 2359px; position: absolute; color: rgba(30, 30, 30, 0.90); font-size: 48px; font-weight: 500">Сайт как машина заявок,<br>а не как картинка</div>
-      <div style="width: 656px; left: 100px; top: 2507px; position: absolute; color: rgba(30, 30, 30, 0.90); font-size: 24px; font-weight: 400; line-height: 32px">Три формата под задачу и бюджет. В каждом — дизайн, продающие тексты и аналитика, собранные ради одной цифры: роста заявок.</div>
-      <div style="left: 100px; top: 2321px; position: absolute; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
-        <img src="./assets/icons/star-small.png" alt="" style="width: 16px; height: 15px; display: block;">
-        <div style="color: rgba(30, 30, 30, 0.90); font-size: 18px; font-weight: 500">Что мы делаем</div>
+      <div id="section-services" data-services-copy style="width: 656px; height: 310px; left: 100px; top: 2321px; position: absolute; z-index: 5; will-change: transform;">
+        <div style="left: 0; top: 0; position: absolute; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+          <img src="./assets/icons/star-small.png" alt="" style="width: 16px; height: 15px; display: block;">
+          <div style="color: rgba(30, 30, 30, 0.90); font-size: 18px; font-weight: 500">Что мы делаем</div>
+        </div>
+        <div style="left: 0; top: 38px; position: absolute; color: rgba(30, 30, 30, 0.90); font-size: 48px; font-weight: 500">Сайт как машина заявок,<br>а не как картинка</div>
+        <div style="width: 656px; left: 0; top: 186px; position: absolute; color: rgba(30, 30, 30, 0.90); font-size: 24px; font-weight: 400; line-height: 32px">Три формата под задачу и бюджет. В каждом — дизайн, продающие тексты и аналитика, собранные ради одной цифры: роста заявок.</div>
       </div>
 
       <div style="width: 818px; height: 600px; left: 1002px; top: 2321px; position: absolute; border-radius: 24px; overflow: hidden; background-image: url('assets/sections/service-landing.jpg'); background-size: cover; background-position: center;"></div>
@@ -147,6 +151,25 @@
           <img src="./assets/icons/arrow.png" alt="" style="width: 40px; height: 40px; display: block;">
         </div>
       </div>
+
+
+      <!-- ===================== BOT CHECKLIST BANNER ===================== -->
+      <a href="https://t.me/withsolution_bot" target="_blank" rel="noopener noreferrer" style="width: 1720px; height: 112px; left: 100px; top: 4335px; position: absolute; background: #F6F6F6; border-radius: 24px; overflow: hidden; padding: 0 24px 0 32px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 32px; text-decoration: none;">
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: inline-flex; align-items: center; gap: 12px; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 500;">
+            <img src="./assets/icons/star-small.png" alt="" style="width: 16px; height: 15px; display: block;">
+            Бесплатные материалы
+          </div>
+          <div style="color: rgba(30, 30, 30, 0.90); font-size: 32px; font-weight: 500; line-height: 40px;">Заберите чек-лист и материалы для улучшения сайта</div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 24px;">
+          <div style="width: 430px; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400; line-height: 26px;">Собрали короткие подсказки, которые помогут найти слабые места сайта до редизайна. Бот: @withsolution_bot.</div>
+          <div style="height: 56px; padding: 10px 18px; background: rgba(30, 30, 30, 0.90); border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; color: white; font-size: 18px; font-weight: 500; white-space: nowrap;">
+            Открыть бота
+            <img src="./assets/icons/chat-white.svg" alt="" style="width: 32px; height: 32px; display: block;">
+          </div>
+        </div>
+      </a>
 
       <!-- ===================== DARK SECTION ===================== -->
       <div id="section-who" style="width: 1920px; height: 2994px; left: 0; top: 4470px; position: absolute; background: #1E1E1E; pointer-events: none;"></div>
@@ -193,16 +216,32 @@
       <div style="left: 100px; top: 5609px; position: absolute; color: white; font-size: 48px; font-weight: 500">Результаты, которые говорят цифрами</div>
 
       <div style="width: 644px; left: 1176px; top: 5669px; position: absolute; opacity: 0.90; color: white; font-size: 24px; font-weight: 400">Нам доверяют 30+ клиентов</div>
-      <div style="width: 48px; height: 48px; left: 1176px; top: 5607px; position: absolute; background: #D9D9D9; border-radius: 9999px; border: 1px #E8E8E8 solid"></div>
-      <div style="width: 48px; height: 48px; left: 1208px; top: 5607px; position: absolute; background: #C4C4C4; border-radius: 9999px; border: 1px #E8E8E8 solid"></div>
-      <div style="width: 48px; height: 48px; left: 1240px; top: 5607px; position: absolute; background: #B0B0B0; border-radius: 9999px; border: 1px #E8E8E8 solid"></div>
-      <div style="width: 48px; height: 48px; left: 1272px; top: 5607px; position: absolute; background: #9E9E9E; border-radius: 9999px; border: 1px #E8E8E8 solid"></div>
+      <img
+  src="./assets/avatar-1.png"
+  alt="Avatar 1"
+  style="width: 48px; height: 48px; left: 1176px; top: 5607px; position: absolute; border-radius: 9999px; border: 1px #E8E8E8 solid; object-fit: cover;"
+>
+<img
+  src="./assets/avatar-2.png"
+  alt="Avatar 2"
+  style="width: 48px; height: 48px; left: 1208px; top: 5607px; position: absolute; border-radius: 9999px; border: 1px #E8E8E8 solid; object-fit: cover;"
+>
+<img
+  src="./assets/avatar-3.png"
+  alt="Avatar 3"
+  style="width: 48px; height: 48px; left: 1240px; top: 5607px; position: absolute; border-radius: 9999px; border: 1px #E8E8E8 solid; object-fit: cover;"
+>
+<img
+  src="./assets/avatar-4.png"
+  alt="Avatar 4"
+  style="width: 48px; height: 48px; left: 1272px; top: 5607px; position: absolute; border-radius: 9999px; border: 1px #E8E8E8 solid; object-fit: cover;"
+>
 
       <div style="width: 1060px; height: 700px; left: 100px; top: 5775px; position: absolute; border-radius: 24px; overflow: hidden">
         <img src="./assets/cases/case-01.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
         <div style="padding: 8px; left: 12px; top: 650px; position: absolute; background: white; border-radius: 12px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
           <div style="color: #1E1E1E; font-size: 18px; font-weight: 400">Сайт для университета</div>
-          <img src="./assets/icons/arrow.png" alt="" style="width: 20px; height: 20px; display: block;">
+          <img src="./assets/icons/arrow.svg" alt="" style="width: 20px; height: 20px; display: block;">
         </div>
       </div>
 
@@ -210,7 +249,7 @@
         <img src="./assets/cases/case-02.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
         <div style="padding: 8px; left: 12px; top: 650px; position: absolute; background: white; border-radius: 12px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
           <div style="color: #1E1E1E; font-size: 18px; font-weight: 400">Сайт для RialTorg</div>
-          <img src="./assets/icons/arrow.png" alt="" style="width: 20px; height: 20px; display: block;">
+          <img src="./assets/icons/arrow.svg" alt="" style="width: 20px; height: 20px; display: block;">
         </div>
       </div>
 
@@ -218,7 +257,7 @@
         <img src="./assets/cases/case-03.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
         <div style="padding: 8px; left: 12px; top: 650px; position: absolute; background: white; border-radius: 12px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
           <div style="color: #1E1E1E; font-size: 18px; font-weight: 400">Продающий лендинг для банного комплекса</div>
-          <img src="./assets/icons/arrow.png" alt="" style="width: 20px; height: 20px; display: block;">
+          <img src="./assets/icons/arrow.svg" alt="" style="width: 20px; height: 20px; display: block;">
         </div>
       </div>
 
@@ -226,7 +265,7 @@
         <img src="./assets/cases/case-04.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
         <div style="padding: 8px; left: 12px; top: 650px; position: absolute; background: white; border-radius: 12px; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
           <div style="color: #1E1E1E; font-size: 18px; font-weight: 400">Интернет-магазин streetwear</div>
-          <img src="./assets/icons/arrow.png" alt="" style="width: 20px; height: 20px; display: block;">
+          <img src="./assets/icons/arrow.svg" alt="" style="width: 20px; height: 20px; display: block;">
         </div>
       </div>
 
@@ -249,7 +288,7 @@
 
       <div style="width: 401px; height: 320px; left: 343px; top: 7856px; position: absolute; background: #F6F6F6; border-radius: 24px; display: flex; flex-direction: column;">
         <div style="left: 24px; top: 24px; position: absolute; color: rgba(30, 30, 30, 0.80); font-size: 24px; font-weight: 400; line-height: 32px">Виктория — маркетолог</div>
-        <div style="width: 349px; left: 24px; top: 72px; position: absolute; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400; line-height: 26px">Больше всего кайфанула от того, что ребята не просто делали «как мы просим», а реально думали о результате. Марат несколько раз тактично, но уверенно отговаривал нас от спорных затей, объясняя, почему это навредит...</div>
+        <div style="width: 349px; left: 24px; top: 72px; position: absolute; color: rgba(30, 30, 30, 0.70); font-size: 18px; font-weight: 400; line-height: 26px">Больше всего понравилось, что команда не просто выполняла просьбы, а думала о результате. Марат несколько раз тактично, но уверенно отговаривал нас от спорных затей, объясняя, почему это навредит...</div>
         <a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" style="position: absolute; left: 24px; bottom: 24px; color: rgba(30, 30, 30, 0.90); font-size: 16px; font-weight: 500; text-decoration: underline; text-underline-offset: 4px;">Читать отзыв</a>
       </div>
       <div style="width: 401px; height: 320px; left: 760px; top: 7856px; position: absolute; background: #F6F6F6; border-radius: 24px; display: flex; flex-direction: column;">
@@ -444,6 +483,7 @@
           <div class="l"><img src="./assets/logos/logo-dnk.png" alt="ДНК России" style="width: 70%; height: 70%; object-fit: contain; display: block;"></div>
           <div class="l"><img src="./assets/logos/logo-rialtorg.png" alt="Риалторг" style="width: 70%; height: 70%; object-fit: contain; display: block;"></div>
           <div class="l"><img src="./assets/logos/logo-omarketing.png" alt="Омаркетинг" style="width: 70%; height: 70%; object-fit: contain; display: block;"></div>
+          <div class="l"><img src="./assets/logos/logo-dom.svg" alt="Дом на миллион" style="width: 70%; height: 70%; object-fit: contain; display: block;"></div>
         </div>
       </div>
     </section>
@@ -470,6 +510,24 @@
       </div>
     </section>
 
+
+    <section class="mv-section mv-checklist">
+      <div class="mv-wrap">
+        <a href="https://t.me/withsolution_bot" target="_blank" rel="noopener noreferrer" style="display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 24px; background: #F6F6F6; color: #1E1E1E; text-decoration: none;">
+          <span style="display: inline-flex; align-items: center; gap: 10px; color: rgba(30, 30, 30, 0.70); font-size: 14px; font-weight: 500;">
+            <img src="./assets/icons/star-small.png" alt="" style="width: 14px; height: 13px; display: block;">
+            Бесплатные материалы
+          </span>
+          <div style="color: rgba(30, 30, 30, 0.90); font-size: 28px; font-weight: 500; line-height: 34px;">Заберите чек-лист для улучшения сайта</div>
+          <p style="margin: 0; color: rgba(30, 30, 30, 0.70); font-size: 16px; font-weight: 400; line-height: 24px;">Короткие материалы и подсказки, которые помогут найти слабые места сайта, лежат в Telegram-боте @withsolution_bot.</p>
+          <span style="height: 52px; padding: 0 16px; background: rgba(30, 30, 30, 0.90); border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; color: white; font-size: 16px; font-weight: 500; align-self: flex-start;">
+            Открыть бота
+            <img src="./assets/icons/chat-white.svg" alt="" style="width: 28px; height: 28px; display: block;">
+          </span>
+        </a>
+      </div>
+    </section>
+
     <section class="mv-section mv-dark">
       <div class="mv-wrap">
         <div class="head">
@@ -493,15 +551,20 @@
             <h2>Результаты, которые говорят цифрами</h2>
           </div>
           <div class="rate">
-            <div class="avatars"><span style="background:#D9D9D9;"></span><span style="background:#C4C4C4;"></span><span style="background:#B0B0B0;"></span><span style="background:#9E9E9E;"></span></div>
+            <div class="avatars">
+              <img src="./assets/avatar-1.png" alt="Avatar 1">
+              <img src="./assets/avatar-2.png" alt="Avatar 2">
+              <img src="./assets/avatar-3.png" alt="Avatar 3">
+              <img src="./assets/avatar-4.png" alt="Avatar 4">
+            </div>
             <p>Нам доверяют 30+ клиентов</p>
           </div>
         </div>
         <div class="mv-cases-list">
-          <div class="mv-case"><div class="tag">Сайт для университета ↗</div></div>
-          <div class="mv-case"><div class="tag">Сайт для RialTorg ↗</div></div>
-          <div class="mv-case"><div class="tag">Продающий лендинг для банного комплекса ↗</div></div>
-          <div class="mv-case"><div class="tag">Интернет-магазин streetwear ↗</div></div>
+          <div class="mv-case"><div class="tag">Сайт для университета →</div></div>
+          <div class="mv-case"><div class="tag">Сайт для RialTorg →</div></div>
+          <div class="mv-case"><div class="tag">Продающий лендинг для банного комплекса →</div></div>
+          <div class="mv-case"><div class="tag">Интернет-магазин streetwear →</div></div>
         </div>
         <a href="cases.html" class="mv-cases-btn"><span class="pill">Посмотреть все кейсы</span><span class="ico">↗</span></a>
       </div>
@@ -515,7 +578,7 @@
           <p class="lead">Три формата под разные задачи и бюджеты. В каждом — дизайн, продающие тексты, аналитика и гарантия роста конверсии.</p>
         </div>
         <div class="mv-reviews-list">
-          <div class="mv-review"><h3>Виктория — маркетолог</h3><p>Больше всего кайфанула от того, что ребята не просто делали «как мы просим», а реально думали о результате. Марат несколько раз тактично, но уверенно отговаривал нас от спорных затей, объясняя, почему это навредит...</p><a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" class="mv-review-link">Читать отзыв</a></div>
+          <div class="mv-review"><h3>Виктория — маркетолог</h3><p>Больше всего понравилось, что команда не просто выполняла просьбы, а думала о результате. Марат несколько раз тактично, но уверенно отговаривал нас от спорных затей, объясняя, почему это навредит...</p><a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" class="mv-review-link">Читать отзыв</a></div>
           <div class="mv-review"><h3>Евгения — логистика</h3><p>Мы полностью довольны результатом сотрудничества. Особенно хочется отметить его быструю реакцию на любые запросы и комментарии с нашей стороны. Марат всегда предлагал обоснованные решения...</p><a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" class="mv-review-link">Читать отзыв</a></div>
           <div class="mv-review"><h3>Raven — интернет-магазин</h3><p>Работа выполнена на действительно высоком уровне. Особенно стоит отметить реализованную админ-панель — она получилась максимально интуитивной и удобной в использовании. Всё понятно без лишних объяснений...</p><a href="https://t.me/withsolution" target="_blank" rel="noopener noreferrer" class="mv-review-link">Читать отзыв</a></div>
         </div>
@@ -593,5 +656,65 @@
   </div>
 
   <script src="js/main.js"></script>
+
+
+  <script>
+    (function () {
+      const DESKTOP_QUERY = '(min-width: 1025px)';
+      const BASE_WIDTH = 1920;
+      const SERVICES_START = 2321;
+      const SERVICES_END = 4321;
+      const STICKY_TOP = 120;
+
+      function isDesktop() {
+        return window.matchMedia(DESKTOP_QUERY).matches;
+      }
+
+      function getCanvasScale(canvas) {
+        const rect = canvas.getBoundingClientRect();
+        return rect.width ? rect.width / BASE_WIDTH : 1;
+      }
+
+      function syncStageHeight() {
+        const stage = document.getElementById('stage');
+        const canvas = document.getElementById('canvas');
+        if (!stage || !canvas || !isDesktop()) return;
+
+        // Важно: не трогаем transform и transform-origin, иначе canvas уезжает из центра.
+        stage.style.height = Math.ceil(canvas.getBoundingClientRect().height) + 'px';
+      }
+
+      function updateServicesSticky() {
+        const canvas = document.getElementById('canvas');
+        const copy = document.querySelector('[data-services-copy]');
+        if (!canvas || !copy) return;
+
+        if (!isDesktop()) {
+          copy.style.transform = '';
+          return;
+        }
+
+        const scale = getCanvasScale(canvas);
+        const canvasTop = window.scrollY + canvas.getBoundingClientRect().top;
+        const currentDesignTop = (window.scrollY + STICKY_TOP - canvasTop) / scale;
+        const copyHeight = copy.offsetHeight || 310;
+        const maxTranslate = Math.max(0, SERVICES_END - SERVICES_START - copyHeight);
+        const translate = Math.min(Math.max(currentDesignTop - SERVICES_START, 0), maxTranslate);
+
+        copy.style.transform = 'translateY(' + translate.toFixed(2) + 'px)';
+      }
+
+      function updateDesktopLayoutHelpers() {
+        syncStageHeight();
+        updateServicesSticky();
+      }
+
+      window.addEventListener('load', updateDesktopLayoutHelpers);
+      window.addEventListener('resize', updateDesktopLayoutHelpers);
+      window.addEventListener('scroll', updateServicesSticky, { passive: true });
+      requestAnimationFrame(updateDesktopLayoutHelpers);
+      setTimeout(updateDesktopLayoutHelpers, 250);
+    })();
+  </script>
 </body>
 </html>
